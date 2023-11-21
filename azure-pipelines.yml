@@ -13,7 +13,8 @@ steps:
     publishWebProjects: true
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'sp-ME-MngEnvMCAP860456-lalitava-1'
+    azureSubscription: 'mi-test'  
+    #azureSubscription: 'sp-ME-MngEnvMCAP860456-lalitava-1'
     appType: 'webApp'
     appName: 'talapoappserv'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
